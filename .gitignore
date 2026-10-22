@@ -12,7 +12,7 @@ dist
 dist-ssr
 *.local
 *-lock.json
-*.pack.js
+# *.pack.js
 
 # Editor directories and files
 .vscode/*
