@@ -129,6 +129,11 @@ body {
   filter: brightness(0) saturate(100%);
 }
 
+.social-links a:first-child img {
+  width: 23px;
+  height: 23px;
+}
+
 @media (max-width: 350px) {
   body {
     padding: 8px 10px;
