@@ -1,20 +1,34 @@
-# Getting Started
-Install the dependencies and run the project in watch mode
-```
+# Business Card
+
+Kartu profil digital sederhana yang dibuat menggunakan React dan Webpack. Kartu menampilkan foto, informasi profil, tombol email, deskripsi, minat, dan tautan media sosial.
+
+## Menjalankan proyek
+
+Pastikan Node.js sudah terpasang. Buka terminal di folder proyek, lalu jalankan:
+
+```bash
 npm install
-npm run build # or watch to rebuild on change
-open index.html
+npm run watch
 ```
-Note that using Webpack is obselete and this archive has been provided
-for compatibility reasons. Prefer using Vite, check it at https://vitejs.dev
-## About Scrimba
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could go further with one of our advanced courses 🚀
+Untuk membuat build satu kali tanpa mode watch:
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+```bash
+npm run build
+```
 
-Happy Coding!
+## Struktur komponen
+
+Komponen kartu berada di folder `components/`:
+
+- `Info.jsx` — foto, nama, jabatan, situs, dan tombol email.
+- `About.jsx` — deskripsi singkat profil.
+- `Interests.jsx` — daftar minat.
+- `SocialLinks.jsx` — tautan media sosial.
+- `BusinessCard.jsx` — menyusun komponen-komponen kartu.
+
+Ubah informasi profil dan tautan di komponen yang sesuai. Atur tampilan kartu melalui `style.css`, dan ganti foto atau ikon melalui folder `images/`.
+
+## Catatan
+
+Proyek ini menggunakan Webpack untuk membangun aplikasi. Font Inter dimuat dari Google Fonts, sehingga memerlukan koneksi internet. Jangan mengedit `index.pack.js` secara langsung karena file tersebut dihasilkan oleh Webpack.
